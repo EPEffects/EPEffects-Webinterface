@@ -5,6 +5,15 @@ Live Version of this webinterface on this teamspeak: ts.agarly.com (you need to 
 
 Orginal App: https://github.com/brai4u/teamspeak-3-channels-create-web
 
+# Installation
+
+1. Install Apache2 / Nginx + PHP5 on your WebServer
+2. Upload the complete project into the www Folder
+3. Open the config.php file and enter all important informations
+4. Use a Serverbot (Example: JTS3ServerMod) to send your vip group the link of your webinterface like this:
+    http://yourdomain.com/?uuid=%CLIENT_UNIQUE_ID% (the bot should replace %CLIENT_UNIQUE_ID% with the unique id of the client)
+5. The bot is ready to use ;)
+
 # Configuration
 
 File configuration with help config.php
