@@ -19,7 +19,7 @@ if ($ChannelPassword !== $ChannelPassword2)
 
 if (!preg_match("/^[a-zA-Z0-9!Â§$&()=?Â´`+~*#_.:,;<>|^Â°\' ]{3,1024}$/", $ChannelDescription))
 	{
-	die("Channel Description invalid<br /><br />If you are using Microsoft Edge or Internet Explorer, try a differnt browser!<br /><br />" . $idUnica);
+	die("Channel Description invalid<br /><br />If you are using Microsoft Edge or Internet Explorer, try a differnt browser!<br /><br />" . $idUnica); // Noticed Bugs in Microsoft Edge...
 	}
 
 if (!preg_match("/^[a-zA-Z0-9!Â§$%&()=?Â´`+~*#-_.:,;<>|^Â°\' ]{3,20}$/", $ChannelPassword))
@@ -27,7 +27,7 @@ if (!preg_match("/^[a-zA-Z0-9!Â§$%&()=?Â´`+~*#-_.:,;<>|^Â°\' ]{3,20}$/", $
 	die('Channel Password invalid: "' . $ChannelPassword . '"<br /><br />' . $idUnica);
 	}
 
-if (preg_match("/^.*([Aa][Gg][Aa][Rr][Ll][Yy]|[Ee3][Pp][Ee3][Ff][Ff][Ee3][Cc][Tt][Ss]|[Pp][Aa][Ss][Ss]|[1Aa][12Bb][13Cc]|[3][2][1]|[QqAaYyZz][WwSsXx][RrDdCc]|[Bb][Aa][Ll][Ll]|[LlWw][OoTt][LlFf]|[Mm][Aa][Nn]).*$/", $ChannelPassword))
+if (preg_match("/^.*([Pp][Aa][Ss][Ss]|[1Aa][12Bb][13Cc]|[3][2][1]|[QqAaYyZz][WwSsXx][RrDdCc]|[Bb][Aa][Ll][Ll]|[LlWw][OoTt][LlFf]|[Mm][Aa][Nn]).*$/", $ChannelPassword))
 	{
 	die('Channel Password invalid: "' . $ChannelPassword . '"<br />Password too common!<br /><br />' . $idUnica);
 	}
@@ -86,7 +86,7 @@ if ($calcid == $id)
 	}
   else
 	{
-	echo "You are not a real VIP!<br /><br />" . $idUnica;
+	echo "You are not a real User!<br /><br />" . $idUnica;
 	}
 
 ?>

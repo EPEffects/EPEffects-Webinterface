@@ -57,11 +57,6 @@ try
 		"cluid" => $idUnica
 	))->toList();
 	$cldbid = strval($infoCliente['cldbid']);
-	if (strpos($ListaDeGroups, $cldbid))
-		{
-		echo "You got banned from creating a permanent channel!<br /><br />" . $idUnica;
-		exit;
-		}
 
 	if (strpos($ListaDeChannels2, $idUnica))
 		{
@@ -100,7 +95,7 @@ if ($calcid == $id)
 		));
 		$ts3_VirtualServer->execute("channeledit", array(
 			"cid" => $sub_cid,
-			"channel_description" => "Click [url=http://web.agarly.com/webchannel/?uuid=" . $idUnica . "&channel=" . $sub_cid . "]here[/url] to change the description and password of this channel.",
+			"channel_description" => "Click [url=http://web.agarly.com/webchannel/?uuid=" . $idUnica . "&channel=" . $sub_cid . "]here[/url] to change the description and password of this channel. This channel was created through the webchannel function of the EPEffects Webinterface.",
 		));
 		$ts3_VirtualServer->execute("clientmove", array(
 			"clid" => $clID,
@@ -120,7 +115,7 @@ if ($calcid == $id)
 	}
   else
 	{
-	echo "You are not a real VIP!<br /><br />" . $idUnica;
+	echo "You are not a real User!<br /><br />" . $idUnica;
 	}
 
 ?>

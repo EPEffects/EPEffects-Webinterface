@@ -142,7 +142,7 @@ if (isset($_GET['channel']))
 
                                     <table class="table table-bordered">
                                         <tr class="danger">
-                                            <th>Rules to create channels on ts.agarly.com</th>
+                                            <th>Rules to create channels on this TeamSpeak³</th>
                                         </tr>
                                     </table>
                                     <p>
